@@ -3,10 +3,6 @@
   ## Description 
   This week we had to make a command line application that allows employers to manage employees information using node, inquirer and MySql. 
 
-  ## Demo 
-https://watch.screencastify.com/v/dL3wz6JPc6a4mzqzbPHb
-
-
   ## Table of Contents
   * [Description](#description)
   * [Installation Instructions](#installation-instructions)
@@ -27,6 +23,11 @@ https://watch.screencastify.com/v/dL3wz6JPc6a4mzqzbPHb
   ## Usage Info
   After all the packages are installed and you ran <mark style="background-color:grey"> node server.js  </mark>  you will be recieve a series of promts where you can select weather you want to "View All Employees", "Add An Employee", "Update Employee Role", "View All Roles", "Add Role", "View All Departments" or "Add Department".
 
+  **Demo** 
+https://watch.screencastify.com/v/dL3wz6JPc6a4mzqzbPHb
+
+### Screenshot
+<img src="./Assets/Screenshot 2024-02-15 at 11.14.31 AM.png">  
 
 
   ## Questions
