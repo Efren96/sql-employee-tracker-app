@@ -1,10 +1,12 @@
+// import inquirer
 const inquirer = require('inquirer');
+// import mysql
 const mysql = require('mysql2');
-// const cTable = require('console.table')
 
+// import .env file
 require('dotenv').config();
 
-
+// connection to database
 const connection = mysql.createConnection(
     {
         host: 'localhost',
@@ -22,7 +24,7 @@ connection.connect(function (err) {
 });
 
 
-
+// inquirer prompt for first question
 function promptUser() {
     inquirer.prompt({
 
@@ -77,6 +79,7 @@ function promptUser() {
         });
 };
 
+// function to show all employees
 function showEmployees() {
     let query = 'SELECT * FROM employee_full';
     connection.query(query, function (err, res) {
@@ -86,6 +89,7 @@ function showEmployees() {
     });
 }
 
+// function to add employee
 function addEmployees() {
     inquirer.prompt([
         {
@@ -159,6 +163,7 @@ function addEmployees() {
         });
 }
 
+// function to update employee
 updateEmployee = () => {
     const employeeSql = `SELECT * FROM employee`;
 
@@ -215,6 +220,7 @@ updateEmployee = () => {
     });
 };
 
+// function to show role
 function showRoles() {
     let query = 'SELECT * FROM role';
     connection.query(query, function (err, res) {
@@ -224,6 +230,7 @@ function showRoles() {
     });
 }
 
+// function to add role
 function addRole() {
     inquirer.prompt([
         {
@@ -261,6 +268,7 @@ function addRole() {
         });
 }
 
+// function to show department
 function showDepartments() {
     let query = 'SELECT * FROM department';
     connection.query(query, function (err, res) {
@@ -270,6 +278,7 @@ function showDepartments() {
     });
 }
 
+// function to add department
 function addDepartments() {
     inquirer.prompt([
         {
